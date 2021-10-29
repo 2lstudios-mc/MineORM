@@ -1,11 +1,9 @@
-package com.dotphin.milkshakeorm.providers;
+package dev._2lstudios.mineorm.providers;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.dotphin.milkshakeorm.repository.FindOption;
-import com.dotphin.milkshakeorm.utils.MapFactory;
 import com.mongodb.BasicDBObject;
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
@@ -20,6 +18,9 @@ import com.mongodb.client.result.UpdateResult;
 
 import org.bson.Document;
 import org.bson.types.ObjectId;
+
+import dev._2lstudios.mineorm.repository.FindOption;
+import dev._2lstudios.mineorm.utils.MapFactory;
 
 public class MongoProvider implements IProvider {
 

@@ -1,9 +1,9 @@
-package com.dotphin.milkshakeorm.providers;
+package dev._2lstudios.mineorm.providers;
 
 import java.util.List;
 import java.util.Map;
 
-import com.dotphin.milkshakeorm.repository.FindOption;
+import dev._2lstudios.mineorm.repository.FindOption;
 
 public interface IProvider {
 

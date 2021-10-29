@@ -1,4 +1,4 @@
-package com.dotphin.milkshakeorm.utils;
+package dev._2lstudios.mineorm.utils;
 
 import java.util.HashMap;
 

@@ -1,11 +1,11 @@
-package com.dotphin.milkshakeorm.repository;
+package dev._2lstudios.mineorm.repository;
 
 import java.lang.reflect.Array;
 import java.util.Map;
 
-import com.dotphin.milkshakeorm.errors.NotIDAnnotationException;
-import com.dotphin.milkshakeorm.providers.IProvider;
-import com.dotphin.milkshakeorm.utils.EntityUtils;
+import dev._2lstudios.mineorm.errors.NotIDAnnotationException;
+import dev._2lstudios.mineorm.providers.IProvider;
+import dev._2lstudios.mineorm.utils.EntityUtils;
 
 @SuppressWarnings("unchecked")
 public class Repository<S> {
@@ -21,6 +21,19 @@ public class Repository<S> {
 
     public Repository(final Class<?> entity, final IProvider provider) {
         this(entity, provider, entity.getName());
+    }
+
+    /* Getters */
+    public String getCollection() {
+        return this.collection;
+    }
+
+    public Class<?> getEntity() {
+        return this.entity;
+    }
+
+    public IProvider getProvider() {
+        return this.provider;
     }
 
     /* Shorthand operations */

@@ -1,13 +1,13 @@
-package com.dotphin.milkshakeorm.entity;
+package dev._2lstudios.mineorm.entity;
 
-import com.dotphin.milkshakeorm.MilkshakeORM;
-import com.dotphin.milkshakeorm.repository.Repository;
+import dev._2lstudios.mineorm.MineORM;
+import dev._2lstudios.mineorm.repository.Repository;
 
 public class Entity {
     private final Repository<?> repository;
 
     public Entity() {
-        this.repository = MilkshakeORM.getRepository(this.getClass());
+        this.repository = MineORM.getRepository(this.getClass());
     }
 
     public Entity(final Repository<?> repository) {

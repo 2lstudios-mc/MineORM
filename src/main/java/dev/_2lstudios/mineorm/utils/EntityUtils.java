@@ -1,8 +1,4 @@
-package com.dotphin.milkshakeorm.utils;
-
-import com.dotphin.milkshakeorm.entity.ID;
-import com.dotphin.milkshakeorm.entity.Prop;
-import com.dotphin.milkshakeorm.errors.NotIDAnnotationException;
+package dev._2lstudios.mineorm.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -10,6 +6,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import dev._2lstudios.mineorm.entity.ID;
+import dev._2lstudios.mineorm.entity.Prop;
+import dev._2lstudios.mineorm.errors.NotIDAnnotationException;
 
 public class EntityUtils {
 

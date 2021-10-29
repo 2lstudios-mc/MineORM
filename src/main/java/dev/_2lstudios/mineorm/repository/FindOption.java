@@ -1,4 +1,4 @@
-package com.dotphin.milkshakeorm.repository;
+package dev._2lstudios.mineorm.repository;
 
 public class FindOption {
 
