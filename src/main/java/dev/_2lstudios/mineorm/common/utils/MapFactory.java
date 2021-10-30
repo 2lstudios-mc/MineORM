@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.utils;
+package dev._2lstudios.mineorm.common.utils;
 
 import java.util.HashMap;
 

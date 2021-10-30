@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.entity;
+package dev._2lstudios.mineorm.common.entity;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

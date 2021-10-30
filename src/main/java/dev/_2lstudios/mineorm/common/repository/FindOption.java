@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.repository;
+package dev._2lstudios.mineorm.common.repository;
 
 public class FindOption {
 

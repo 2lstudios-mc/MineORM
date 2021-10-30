@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.errors;
+package dev._2lstudios.mineorm.common.errors;
 
 public class NotIDAnnotationException extends Exception {
     public NotIDAnnotationException(final Object obj) {

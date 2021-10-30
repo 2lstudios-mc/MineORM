@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.providers;
+package dev._2lstudios.mineorm.common.providers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +19,8 @@ import com.mongodb.client.result.UpdateResult;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
-import dev._2lstudios.mineorm.repository.FindOption;
-import dev._2lstudios.mineorm.utils.MapFactory;
+import dev._2lstudios.mineorm.common.repository.FindOption;
+import dev._2lstudios.mineorm.common.utils.MapFactory;
 
 public class MongoProvider implements IProvider {
 

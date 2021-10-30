@@ -1,11 +1,11 @@
-package dev._2lstudios.mineorm;
+package dev._2lstudios.mineorm.common;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import dev._2lstudios.mineorm.providers.IProvider;
-import dev._2lstudios.mineorm.providers.MongoProvider;
-import dev._2lstudios.mineorm.repository.Repository;
+import dev._2lstudios.mineorm.common.providers.IProvider;
+import dev._2lstudios.mineorm.common.providers.MongoProvider;
+import dev._2lstudios.mineorm.common.repository.Repository;
 
 @SuppressWarnings("unchecked")
 public class MineORM {

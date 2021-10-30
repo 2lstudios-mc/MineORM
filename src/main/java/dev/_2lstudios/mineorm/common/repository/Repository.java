@@ -1,11 +1,11 @@
-package dev._2lstudios.mineorm.repository;
+package dev._2lstudios.mineorm.common.repository;
 
 import java.lang.reflect.Array;
 import java.util.Map;
 
-import dev._2lstudios.mineorm.errors.NotIDAnnotationException;
-import dev._2lstudios.mineorm.providers.IProvider;
-import dev._2lstudios.mineorm.utils.EntityUtils;
+import dev._2lstudios.mineorm.common.errors.NotIDAnnotationException;
+import dev._2lstudios.mineorm.common.providers.IProvider;
+import dev._2lstudios.mineorm.common.utils.EntityUtils;
 
 @SuppressWarnings("unchecked")
 public class Repository<S> {

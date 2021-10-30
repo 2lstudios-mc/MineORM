@@ -1,7 +1,7 @@
-package dev._2lstudios.mineorm.entity;
+package dev._2lstudios.mineorm.common.entity;
 
-import dev._2lstudios.mineorm.MineORM;
-import dev._2lstudios.mineorm.repository.Repository;
+import dev._2lstudios.mineorm.common.MineORM;
+import dev._2lstudios.mineorm.common.repository.Repository;
 
 public class Entity {
     private final Repository<?> repository;
