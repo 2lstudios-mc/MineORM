@@ -10,7 +10,7 @@ import dev._2lstudios.mineorm.utils.JavaUtils;
 
 public class Driver {
 
-    public static String URL = "https://github.com/2lstudios-mc/mineorm/raw/master/drivers/";
+    public static String URL = "https://github.com/2lstudios-mc/mineorm/raw/main/drivers/";
 
     private final DatabaseType type;
     private final String name;
@@ -31,11 +31,11 @@ public class Driver {
 
         try {
             this.localVersion = FileUtils.readFirstLine(this.verFile);
-        } catch (IOException e) {
+        } catch (final Exception e) {
             this.localVersion = "0.0.0";
             try {
                 FileUtils.createAndWriteFile(this.verFile, this.localVersion);
-            } catch (IOException e2) {
+            } catch (final Exception e2) {
                 e2.printStackTrace();
             }
             e.printStackTrace();

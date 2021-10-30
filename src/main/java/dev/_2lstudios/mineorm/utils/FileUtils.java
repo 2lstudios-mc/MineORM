@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class FileUtils {
-    public static String readFirstLine(final File file) throws IOException {
+    public static String readFirstLine(final File file) throws Exception {
         final BufferedReader reader = new BufferedReader(new FileReader(file));
         final String line = reader.readLine();
         reader.close();
