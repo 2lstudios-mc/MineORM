@@ -22,7 +22,7 @@ import org.bson.types.ObjectId;
 import dev._2lstudios.mineorm.common.repository.FindOption;
 import dev._2lstudios.mineorm.common.utils.MapFactory;
 
-public class MongoProvider implements IProvider {
+public class MongoDBProvider implements IProvider {
 
     private MongoClient client;
     private MongoDatabase database;

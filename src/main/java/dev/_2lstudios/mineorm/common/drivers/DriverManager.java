@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import dev._2lstudios.mineorm.common.DatabaseType;
-import dev._2lstudios.mineorm.common.utils.JavaUtils;
 
 public class DriverManager {
 
@@ -19,48 +18,18 @@ public class DriverManager {
         this.directory = directory;
         this.logger = logger;
         this.drivers = new HashMap<>();
-
-        this.addDriver(DatabaseType.MONGODB);
-
-        this.checkForUpdates();
-        this.loadClasspath();
     }
 
-    public void addDriver(final DatabaseType type) {
-        this.drivers.put(type, new Driver(this.directory, type));
-    }
-
-    public void checkForUpdates() {
-        for (final Driver driver : this.drivers.values()) {
-            try {
-                if (!driver.isLastVersion()) {
-                    this.logger.info("Driver for " + driver.getType() + " is outdated. Downloading from repository...");
-                    driver.download();
-                }
-
-                else if (!driver.exist()) {
-                    this.logger
-                            .info("Driver for " + driver.getType() + " didn't exist. Downloading from repository...");
-                    driver.download();
-                }
-            } catch (final IOException e) {
-                e.printStackTrace();
+    public void downloadIfNotExistDriver(final DatabaseType type) throws IOException {
+        if (!drivers.containsKey(type)) {
+            final Driver driver = this.drivers.put(type, new Driver(this.directory, type));
+            if (!driver.isLastVersion()) {
+                this.logger.info("Driver for " + driver.getType() + " is outdated. Downloading from repository...");
+                driver.download();
+            } else if (!driver.exist()) {
+                this.logger.info("Driver for " + driver.getType() + " didn't exist. Downloading from repository...");
+                driver.download();
             }
         }
     }
-
-    public void loadClasspath() {
-        for (final Driver driver : this.drivers.values()) {
-            try {
-                JavaUtils.addJarFileToClassPath(driver.getJarFile());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public File getDirectory() {
-        return this.directory;
-    }
-
 }

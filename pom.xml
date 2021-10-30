@@ -15,7 +15,6 @@
 
   <properties>
     <author>Sammwy</author>
-    <mainClass>dev._2lstudios.advancedauth.AdvancedAuth</mainClass>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 

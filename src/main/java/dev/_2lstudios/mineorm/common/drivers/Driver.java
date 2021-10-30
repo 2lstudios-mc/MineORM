@@ -6,6 +6,7 @@ import java.io.IOException;
 import dev._2lstudios.mineorm.common.DatabaseType;
 import dev._2lstudios.mineorm.common.utils.FileUtils;
 import dev._2lstudios.mineorm.common.utils.HTTPUtils;
+import dev._2lstudios.mineorm.common.utils.JavaUtils;
 
 public class Driver {
 
@@ -84,5 +85,9 @@ public class Driver {
 
     public DatabaseType getType() {
         return this.type;
+    }
+
+    public void loadClasspath() throws IOException {
+        JavaUtils.addJarFileToClassPath(this.getJarFile());
     }
 }

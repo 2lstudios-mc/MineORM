@@ -1,6 +1,6 @@
 name: ${name}
 description: ${description}
 author: ${author}
-main: dev._2lstudios.mineorm.plugin.MineORMBukkit
+main: dev._2lstudios.mineorm.plugin.MineORMBungee
 version: ${version}
 url: ${url}

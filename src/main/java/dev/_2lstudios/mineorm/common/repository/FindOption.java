@@ -1,7 +1,6 @@
 package dev._2lstudios.mineorm.common.repository;
 
 public class FindOption {
-
     private String sortKey = null;
     private int sortOrder = 0;
 
