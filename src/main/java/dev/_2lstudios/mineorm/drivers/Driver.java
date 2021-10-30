@@ -1,12 +1,12 @@
-package dev._2lstudios.mineorm.common.drivers;
+package dev._2lstudios.mineorm.drivers;
 
 import java.io.File;
 import java.io.IOException;
 
-import dev._2lstudios.mineorm.common.DatabaseType;
-import dev._2lstudios.mineorm.common.utils.FileUtils;
-import dev._2lstudios.mineorm.common.utils.HTTPUtils;
-import dev._2lstudios.mineorm.common.utils.JavaUtils;
+import dev._2lstudios.mineorm.DatabaseType;
+import dev._2lstudios.mineorm.utils.FileUtils;
+import dev._2lstudios.mineorm.utils.HTTPUtils;
+import dev._2lstudios.mineorm.utils.JavaUtils;
 
 public class Driver {
 

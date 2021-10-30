@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.common.utils;
+package dev._2lstudios.mineorm.utils;
 
 import java.io.BufferedInputStream;
 import java.io.File;

@@ -1,9 +1,9 @@
-package dev._2lstudios.mineorm.common.providers;
+package dev._2lstudios.mineorm.providers;
 
 import java.util.List;
 import java.util.Map;
 
-import dev._2lstudios.mineorm.common.repository.FindOption;
+import dev._2lstudios.mineorm.repository.FindOption;
 
 public interface IProvider {
 

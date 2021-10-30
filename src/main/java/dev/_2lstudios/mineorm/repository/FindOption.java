@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.common.repository;
+package dev._2lstudios.mineorm.repository;
 
 public class FindOption {
     private String sortKey = null;

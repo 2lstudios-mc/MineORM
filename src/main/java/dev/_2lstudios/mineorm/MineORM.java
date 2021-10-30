@@ -1,7 +1,8 @@
-package dev._2lstudios.mineorm.common;
+package dev._2lstudios.mineorm;
 
-import dev._2lstudios.mineorm.common.providers.IProvider;
-import dev._2lstudios.mineorm.common.repository.Repository;
+import dev._2lstudios.mineorm.plugin.MineORMPlatform;
+import dev._2lstudios.mineorm.providers.IProvider;
+import dev._2lstudios.mineorm.repository.Repository;
 
 public class MineORM {
     public static IProvider connect(final DatabaseType type, final String connectionURI) {

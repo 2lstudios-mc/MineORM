@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.common;
+package dev._2lstudios.mineorm;
 
 public enum DatabaseType {
     MONGODB

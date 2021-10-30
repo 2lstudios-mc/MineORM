@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.common.drivers;
+package dev._2lstudios.mineorm.drivers;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import dev._2lstudios.mineorm.common.DatabaseType;
+import dev._2lstudios.mineorm.DatabaseType;
 
 public class DriverManager {
 

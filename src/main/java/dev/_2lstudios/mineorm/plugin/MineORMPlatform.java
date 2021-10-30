@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.common;
+package dev._2lstudios.mineorm.plugin;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,10 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import dev._2lstudios.mineorm.common.providers.IProvider;
-import dev._2lstudios.mineorm.common.repository.Repository;
-import dev._2lstudios.mineorm.common.drivers.DriverManager;
-import dev._2lstudios.mineorm.common.providers.MongoDBProvider;
+import dev._2lstudios.mineorm.providers.IProvider;
+import dev._2lstudios.mineorm.repository.Repository;
+import dev._2lstudios.mineorm.DatabaseType;
+import dev._2lstudios.mineorm.drivers.DriverManager;
+import dev._2lstudios.mineorm.providers.MongoDBProvider;
 
 @SuppressWarnings("unchecked")
 public class MineORMPlatform {

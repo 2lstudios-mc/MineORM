@@ -1,4 +1,4 @@
-package dev._2lstudios.mineorm.common.utils;
+package dev._2lstudios.mineorm.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -7,9 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import dev._2lstudios.mineorm.common.entity.ID;
-import dev._2lstudios.mineorm.common.entity.Prop;
-import dev._2lstudios.mineorm.common.errors.NotIDAnnotationException;
+import dev._2lstudios.mineorm.entity.ID;
+import dev._2lstudios.mineorm.entity.Prop;
+import dev._2lstudios.mineorm.errors.NotIDAnnotationException;
 
 public class EntityUtils {
 
