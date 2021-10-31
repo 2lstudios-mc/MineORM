@@ -1,15 +1,11 @@
 package dev._2lstudios.mineorm.plugin;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
 
 import dev._2lstudios.mineorm.providers.IProvider;
 import dev._2lstudios.mineorm.repository.Repository;
 import dev._2lstudios.mineorm.DatabaseType;
-import dev._2lstudios.mineorm.drivers.DriverManager;
 import dev._2lstudios.mineorm.providers.MongoDBProvider;
 
 @SuppressWarnings("unchecked")
@@ -18,24 +14,15 @@ public class MineORMPlatform {
     private final Map<DatabaseType, IProvider> providers;
     private final Map<String, IProvider> cachedProviders;
 
-    private final DriverManager driverManager;
-
-    public MineORMPlatform(final File workingDirectory, final Logger logger) {
+    public MineORMPlatform() {
         this.repositories = new HashMap<>();
         this.providers = new HashMap<>();
         this.cachedProviders = new HashMap<>();
-        this.driverManager = new DriverManager(new File(workingDirectory, "drivers"), logger);
 
         instance = this;
     }
 
     public IProvider connect(final DatabaseType type, final String connectionURI) {
-        try {
-            this.driverManager.downloadIfNotExistDriver(type);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         IProvider provider = this.cachedProviders.get(connectionURI);
 
         if (provider != null) {
